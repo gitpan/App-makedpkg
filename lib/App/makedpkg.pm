@@ -1,6 +1,6 @@
 package App::makedpkg;
-#ABSTRACT: Build Debian Packages based on templates
-our $VERSION = '0.01'; #VERSION
+#ABSTRACT: Facilitate building Debian packages with templates
+our $VERSION = '0.02'; #VERSION
 use strict;
 use v5.10.0;
 
@@ -192,8 +192,9 @@ sub prepare_debuild {
                 `cp -r $from $build_dir/$from`;
 
                 my $target = $from;
-                $target =~ s{/[^/]+}{};
-                push @install, "$from ".$files->{to}."/$target";
+                $target =~ s{/?[^/]+$}{};
+                $target = "/$target" if $target ne '';
+                push @install, "$from ".$files->{to}.$target;
             }
         }
 
@@ -221,13 +222,13 @@ sub exec_debuild {
 
     return if $opt->prepare;
     
-    my $options = ($self->{config}{build}{options} || '');
+    my $command = $self->{config}{build}{command} || 'debuild';
 
     if ($opt->dry) {
-        say "exec debuild $options";
+        say "exec $command";
     } else {
         chdir $self->{config}{build}{directory};
-        exec "debuild $options";
+        exec $command;
     }
 }
 
@@ -277,11 +278,11 @@ __END__
 
 =head1 NAME
 
-App::makedpkg - Build Debian Packages based on templates
+App::makedpkg - Facilitate building Debian packages with templates
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 DESCRIPTION
 

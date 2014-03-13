@@ -1,5 +1,5 @@
 ---
-abstract: 'Build Debian Packages based on templates'
+abstract: 'Facilitate building Debian packages with templates'
 author:
   - 'Jakob Voß'
 build_requires: {}
@@ -16,7 +16,7 @@ name: App-makedpkg
 provides:
   App::makedpkg:
     file: lib/App/makedpkg.pm
-    version: 0.01
+    version: 0.02
 requires:
   App::Cmd: 0.323
   Config::Any: 0.24
@@ -26,4 +26,4 @@ resources:
   bugtracker: https://github.com/nichtich/App-makedpkg/issues
   homepage: https://github.com/nichtich/App-makedpkg
   repository: https://github.com/nichtich/App-makedpkg.git
-version: 0.01
+version: 0.02

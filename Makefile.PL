@@ -11,7 +11,7 @@ install_share dist => "share";
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Build Debian Packages based on templates",
+  "ABSTRACT" => "Facilitate building Debian packages with templates",
   "AUTHOR" => "Jakob Vo\x{df}",
   "BUILD_REQUIRES" => {},
   "CONFIGURE_REQUIRES" => {
@@ -30,7 +30,7 @@ my %WriteMakefileArgs = (
     "Text::Template" => 0
   },
   "TEST_REQUIRES" => {},
-  "VERSION" => "0.01",
+  "VERSION" => "0.02",
   "test" => {
     "TESTS" => "t/*.t"
   }

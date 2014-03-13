@@ -1,6 +1,10 @@
 Changelog for App-makedpkg
 
-0.01 2014-03-13T08:31:05
+0.02 2014-03-13T11:09:31
+ - fixed creation of install file [Jakob Voss]
+ - config value build.command instead of build.options [Jakob Voss]
+
+0.01 2014-03-13T08:01:31
  - fixed test [Jakob Voss]
  - fixed directory structure [Jakob Voss]
  - don't fail on different newlines [Jakob Voss]
