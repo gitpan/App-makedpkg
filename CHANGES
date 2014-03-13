@@ -1,0 +1,17 @@
+Changelog for App-makedpkg
+
+0.01 2014-03-13T08:31:05
+ - fixed test [Jakob Voss]
+ - fixed directory structure [Jakob Voss]
+ - don't fail on different newlines [Jakob Voss]
+ - sort files for predictable output [Jakob Voss]
+ - automatically create install file [Jakob Voss]
+ - show build directory in verbose mode [Jakob Voss]
+ - allow failure for perl 5.10 [Jakob Voss]
+ - don't show YAML parsing error [Jakob Voss]
+ - more safe YAML writing [Jakob Voss]
+ - facilitated testing [Jakob Voss]
+ - YAMl files must end with newline [Jakob Voss]
+ - forgot option --prepare [Jakob Voss]
+ - initial version [Jakob Voss]
+
