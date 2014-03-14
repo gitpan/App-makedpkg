@@ -16,7 +16,7 @@ name: App-makedpkg
 provides:
   App::makedpkg:
     file: lib/App/makedpkg.pm
-    version: 0.02
+    version: 0.03
 requires:
   App::Cmd: 0.323
   Config::Any: 0.24
@@ -26,4 +26,4 @@ resources:
   bugtracker: https://github.com/nichtich/App-makedpkg/issues
   homepage: https://github.com/nichtich/App-makedpkg
   repository: https://github.com/nichtich/App-makedpkg.git
-version: 0.02
+version: 0.03

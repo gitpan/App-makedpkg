@@ -1,6 +1,9 @@
 Changelog for App-makedpkg
 
-0.02 2014-03-13T11:09:31
+0.03 2014-03-14T08:34:39
+ - removed dependency [Jakob Voss]
+
+0.02 2014-03-13T09:48:11
  - fixed creation of install file [Jakob Voss]
  - config value build.command instead of build.options [Jakob Voss]
 

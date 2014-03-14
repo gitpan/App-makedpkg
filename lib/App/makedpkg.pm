@@ -1,6 +1,6 @@
 package App::makedpkg;
 #ABSTRACT: Facilitate building Debian packages with templates
-our $VERSION = '0.02'; #VERSION
+our $VERSION = '0.03'; #VERSION
 use strict;
 use v5.10.0;
 
@@ -10,7 +10,6 @@ use File::Path qw(make_path remove_tree);
 use File::Basename;
 use File::Copy ();
 use Text::Template qw(fill_in_file);
-use YAML::Tiny qw(Dump);
 use Config::Any;
 use File::ShareDir qw(dist_dir);
 
@@ -282,7 +281,7 @@ App::makedpkg - Facilitate building Debian packages with templates
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 DESCRIPTION
 

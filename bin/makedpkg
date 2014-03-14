@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 #ABSTRACT: Facilitate building Debian packages with templates
 #PODNAME: makedpkg
-our $VERSION = '0.02'; #VERSION
+our $VERSION = '0.03'; #VERSION
 
 use App::makedpkg;
 App::makedpkg->run;
@@ -18,7 +18,7 @@ makedpkg - Facilitate building Debian packages with templates
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 DESCRIPTION
 
