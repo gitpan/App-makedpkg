@@ -1,6 +1,11 @@
 Changelog for App-makedpkg
 
-0.03 2014-03-14T08:34:39
+0.04 2014-03-20T07:17:15
+ - depend on File::ShareDir [Jakob Voss]
+ - include source/format file [Jakob Voss]
+ - include compat file for V9 [Jakob Voss]
+
+0.03 2014-03-14T08:34:33
  - removed dependency [Jakob Voss]
 
 0.02 2014-03-13T09:48:11

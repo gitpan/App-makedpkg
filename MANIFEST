@@ -9,8 +9,10 @@ cpanfile
 lib/App/makedpkg.pm
 makedpkg.yml
 share/changelog
+share/compat
 share/control
 share/rules
+share/source/format
 t/compile.t
 t/config.t
 t/files.t
