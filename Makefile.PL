@@ -27,11 +27,11 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "App::Cmd" => "0.323",
     "Config::Any" => "0.24",
-    "File::ShareDir" => 0,
+    "File::ShareDir" => "1.0",
     "Text::Template" => 0
   },
   "TEST_REQUIRES" => {},
-  "VERSION" => "0.04",
+  "VERSION" => "0.05",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -41,7 +41,7 @@ my %WriteMakefileArgs = (
 my %FallbackPrereqs = (
   "App::Cmd" => "0.323",
   "Config::Any" => "0.24",
-  "File::ShareDir" => 0,
+  "File::ShareDir" => "1.0",
   "Text::Template" => 0
 );
 

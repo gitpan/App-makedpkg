@@ -1,6 +1,6 @@
 package App::makedpkg;
 #ABSTRACT: Facilitate building Debian packages with templates
-our $VERSION = '0.04'; #VERSION
+our $VERSION = '0.05'; #VERSION
 use strict;
 use v5.10.0;
 
@@ -289,7 +289,7 @@ App::makedpkg - Facilitate building Debian packages with templates
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 DESCRIPTION
 

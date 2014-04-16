@@ -1,6 +1,10 @@
 #ABSTRACT: facilityte unit tests
 package App::makedpkg::Tester;
 use strict;
+
+use Test::More;
+plan(skip_all => 'skip tests on Windows') if $^O eq 'MSWin32';
+
 use parent 'Exporter';
 use File::Temp qw(tempdir);
 use App::Cmd::Tester;
@@ -8,7 +12,7 @@ use App::Cmd::Tester;
 # shortcuts to App::Cmd::Tester result
 our $RESULT;
 our @cmd = qw(stdout stderr output error exit_code);
-eval "sub $_() { \$RESULT->$_ }" for @cmd;
+eval "sub $_() { my \$s=\$RESULT->$_; chomp \$s; \$s }" for @cmd;
 
 our @EXPORT = (qw(makedpkg write_file write_yaml path), @cmd);
 

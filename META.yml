@@ -16,15 +16,15 @@ name: App-makedpkg
 provides:
   App::makedpkg:
     file: lib/App/makedpkg.pm
-    version: 0.04
+    version: 0.05
 requires:
   App::Cmd: 0.323
   Config::Any: 0.24
-  File::ShareDir: 0
+  File::ShareDir: 1.0
   Text::Template: 0
   perl: v5.10.0
 resources:
   bugtracker: https://github.com/nichtich/App-makedpkg/issues
   homepage: https://github.com/nichtich/App-makedpkg
   repository: https://github.com/nichtich/App-makedpkg.git
-version: 0.04
+version: 0.05
